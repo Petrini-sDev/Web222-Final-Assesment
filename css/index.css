@@ -7,6 +7,7 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -16,10 +17,9 @@ header img {
   height: auto;
 }
 
-.quote h2 {
+.header h2 {
   text-align: center;
   font-size: 1.2em;
-  margin: 10px;
 }
 
 .navbar {
