@@ -61,3 +61,18 @@ header img {
   color: black;
   font-style: italic;
 }
+
+.header {
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Honesty-Statement {
+  margin-left: 40vh;
+  margin-right: 40vh;
+  max-width: 128vh;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+  line-height: 2em;
+}
