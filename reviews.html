@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/review.css" type="text/css" />
+    <title>Reviews</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"><img src="images/Logo.png" /></a>
+    </header>
+    <nav id="menu">
+      <div class="navbar">
+        <button>
+          <a href="/index.html">Home</a>
+        </button>
+        <button>
+          <a href="/about.html">About</a>
+        </button>
+        <button>
+          <a href="/info.html">More Info</a>
+        </button>
+      </div>
+    </nav>
+    <hr />
+
+    <div class="reviews">
+      <!-- Show cards here! -->
+    </div>
+    <form id="new-review">
+      <article class="form">
+        <h3>Leave us a review!</h3>
+        <div>
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="date" id="start" name="reviewDate" required />
+        </div>
+        <div class="rating">
+          <input type="radio" name="stars" value="1" id="star-1" />
+          <label for="star-1"><span class="icon">★</span></label>
+          <input type="radio" name="stars" value="2" id="star-2" />
+          <label for="star-2"><span class="icon">★★</span></label>
+          <input type="radio" name="stars" value="3" id="star-3" />
+          <label for="star-3"><span class="icon">★★★</span></label>
+          <input type="radio" name="stars" value="4" id="star-4" />
+          <label for="star-4"><span class="icon">★★★★</span></label>
+          <input type="radio" name="stars" value="5" id="star-5" />
+          <label for="star-5"><span class="icon">★★★★★</span></label>
+        </div>
+        <textarea name="review" maxlength="512" placeholder="Enter Review Here" required></textarea>
+        <button type="submit">Submit</button>
+      </article>
+    </form>
+    <footer>
+      <hr />
+      <div class="newsletter">
+        <form id="email-form" method="post" action="https://httpbin.org/post">
+          <h3>Subscribe to our newsletter!</h3>
+          <p>Be the first to receive updates on the latest BlackJack strategies!</p>
+          <input type="text" placeholder="Email Address" name="mail" required />
+          <input type="hidden" name="name" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

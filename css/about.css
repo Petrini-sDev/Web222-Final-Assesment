@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+  background: white;
+}
+
+header img {
+  max-width: 100%;
+}
+
+.navbar {
+  max-width: 100vh;
+  margin: auto;
+  background-color: #8c8d8f;
+  height: 70px;
+  text-align: center;
+}
+
+.navbar button {
+  background-color: #8c8d8f;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.navbar button:hover {
+  background-color: #236357;
+}
+
+.navbar button a {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.Header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.Paragraph {
+  margin-left: 40vh;
+  margin-right: 40vh;
+  max-width: 128vh;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+.Paragraph a {
+  color: black;
+  font-style: italic;
+}

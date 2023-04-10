@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+  background: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #8c8d8f;
+  height: 70px;
+  text-align: center;
+}
+
+.navbar button {
+  background-color: #8c8d8f;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.navbar button:hover {
+  background-color: #236357;
+}
+
+.navbar button a {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .navbar button {
+    margin-right: 0;
+  }
+
+  .navbar button a {
+    font-size: 24px;
+  }
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 400px) {
+  .reviews {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .reviews {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #379683;
+  overflow: hidden;
+  position: relative;
+  width: 388px;
+  height: 240px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card .name {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card .date {
+  margin-left: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.card p {
+  text-align: center;
+  color: gold;
+}
+
+.card .review {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #379683;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form h3 {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form textarea {
+  display: block;
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form textarea {
+  resize: none;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.rating .icon {
+  font-size: 24px;
+  color: white;
+}
+
+.rating input[type="radio"]:checked + label .icon {
+  color: gold;
+}
+
+.form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0066cc;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.newsletter input[type="text"] {
+  display: block;
+  margin: auto;
+  width: 240px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input[type="submit"] {
+  display: block;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
