@@ -46,7 +46,7 @@ header img {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 400px) {
   .navbar {
     max-width: 100%;
     margin: 0;
@@ -77,9 +77,20 @@ h3 {
 }
 
 .first-line iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media all and (max-width: 400px) {
+  .first-line iframe {
+    height: 300px;
+    box-shadow: none;
+  }
 }
 
 .first-paragraph {
@@ -102,6 +113,23 @@ h3 {
   width: 1400px;
   font-weight: bold;
   line-height: 2em;
+}
+
+@media all and (max-width: 400px) {
+  .first-line {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .first-paragraph {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .second-paragraph {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .Small-para h3 {

@@ -17,7 +17,7 @@ header img {
 }
 
 .navbar {
-  max-width: 100vh;
+  max-width: 100%;
   margin: auto;
   background-color: #8c8d8f;
   height: 70px;
@@ -49,12 +49,22 @@ header img {
 }
 
 .Paragraph {
-  margin-left: 40vh;
-  margin-right: 40vh;
-  max-width: 128vh;
+  max-width: 800px;
+  margin: 0 auto;
   font-family: "Playfair Display", serif;
   font-size: 1.3em;
   line-height: 2em;
+  padding: 0 1em;
+}
+
+@media only screen and (max-width: 400px) {
+  .Paragraph {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 0;
+  }
 }
 
 .Paragraph a {
@@ -66,13 +76,4 @@ header img {
   font-family: "Playfair Display", serif;
   margin-top: 20px;
   text-align: center;
-}
-
-.Honesty-Statement {
-  margin-left: 40vh;
-  margin-right: 40vh;
-  max-width: 128vh;
-  font-family: "Playfair Display", serif;
-  font-size: 1.3em;
-  line-height: 2em;
 }
