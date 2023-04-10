@@ -119,6 +119,63 @@ header img {
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@media screen and (max-width: 400px) {
+  .first-line {
+    display: flex;
+    flex-direction: column;
+    gap: 3.33vh;
+  }
+
+  .first-line img {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .first-line p {
+    margin-left: 0;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .paragraph {
+    margin-left: 0;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .last-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 3.33vh;
+  }
+
+  .last-paragraph p {
+    margin-left: 0;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.5em;
+  }
+
+  .last-paragraph a {
+    color: black;
+    font-style: italic;
+  }
+
+  .last-paragraph img {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
 .paragraph a {
   color: black;
   font-style: italic;
